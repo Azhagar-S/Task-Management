@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+
+    const navigate = useNavigate()
   return (
     <div class="bg-gray-300">
       <div class="min-h-screen flex flex-col items-center justify-center py-6 px-4">
@@ -50,7 +53,9 @@ const Login = () => {
                   Sign in
                 </button>
               </div>
-              <p class="text-slate-800 text-sm !mt-6 text-center">Don't have an account? <a href="javascript:void(0);" class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Register here</a></p>
+              <p class="text-slate-800 text-sm !mt-6 text-center">Don't have an account? <a href="javascript:void(0);" class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold" 
+              onClick={()=>navigate('/register')}
+              >Register here</a></p>
             </form>
           </div>
         </div>

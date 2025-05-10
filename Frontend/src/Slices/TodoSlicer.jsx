@@ -1,12 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit"
 
-const intiialState = {
-    todo:[]
+const intialState = {
+    todo:[],
 }
 
 export const todoSlice = createSlice({
-    name:"todos",
-    initialState,
+    name:"todo",
+    intialState,
 
     reducers:{
         // todoName:(state,action)=>{
@@ -21,5 +21,5 @@ export const todoSlice = createSlice({
     }
 })
 
-export const {addTask , deleteTask} = todoSlice
+export const {addTask , deleteTask} = todoSlice.actions
 export default todoSlice.reducer

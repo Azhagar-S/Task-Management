@@ -8,7 +8,7 @@ import Login from './pages/Login.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    {/* <App /> */}
-    <Login />
+    <App />
+    
   </Provider>,
 )
